@@ -1,59 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-   <head>
+   <head><link rel="stylesheet" type="text/css" href="public/css/style.css">
        <title>Dennis Burgare</title>
        <meta charset="utf-8"/>
    </head>
-   
    <body>
     <header>
         <h1>Välkommen till Dennis Burgare</h1>
-    <header>    
-    </main>
-        <section>
+        <!--   <img src="public/img/headerbild.png.jpg" alt="Header Image">  -->
+ 
+    </header>    
+    <main>
+        <section id="burgare">
+             <!-- såhär som ovan skapar man id, behöver egentligen ens gjort det än, men nu i CSS så når jag burgar-sektionen  -->
+                <!-- genom att skriva #burgare{}     det som är i {} bestämmer vad som ska hända för den sektionen  -->
         
         <h2>Val av burgare:</h2>
         <p>Här under väljer du burgare</p>
-        <div style="display: inline-block">
-        <h3>Halloumiburgare</h3>
-        <img src="public/img/halloumi.png.jpeg" style="width: 200px">
-     
-        <p>Innehåller:</p>
+        <div class="burger-items">
+            <div>
+            <h3>Halloumiburgare</h3>
+            <img src="public/img/halloumi.png.jpeg" style="width: 200px">
+        
+            <p>Innehåller:</p>
 
-        <ul>
-            <li>gluten</li>
-            <li>laktos</li>
-            <li>socker</li>
-        </ul>
-    </div>
-            <div style="display: inline-block">
+            
+
+            <ul>   
+                <li><span class="ingredient">gluten</span></li>
+                <li><span class="ingredient">laktos</span></li>
+                <li><span class="ingredient">socker</span></li>
+            </ul>
+            </div>
+            <div>
                 <h3>Fiskburgare</h3>
                 <img src="public/img/fisk.png.jpeg" style="width: 200px">
                 
                 <p>Innehåller:</p>
         
                 <ul>
-                    <li>gluten</li>
-                    <li>laktos</li>
-                    <li>fisk</li>
+                    <li><span class="ingredient">gluten</span></li>
+                    <li><span class="ingredient">laktos</span></li>
+                    <li><span class="ingredient">fisk</span></li>
                 </ul>
             </div>
-                    <div style="display: inline-block">
-                        <h3>Köttburgare</h3>
-                        <img src="public/img/kött3.png.jpeg" style="width: 200px">
-                        
-                        <p>Innehåller:</p>
+            <div>
+                <h3>Köttburgare</h3>
+                <img src="public/img/grundrecept-hamburgare_32933.jpg.avif" style="width: 200px">
                 
-                        <ul>
-                            <li>gluten</li>
-                            <li>laktos</li>
-                            <li>kött</li>
-                        </ul>
-                    </div>                
-
+                <p>Innehåller:</p>
+        
+                <ul>
+                    <li><span class="ingredient">gluten</span></li>
+                    <li><span class="ingredient">laktos</span></li>
+                    <li><span class="ingredient">kött</span></li>
+                </ul>
+            </div>                
+        </div>
         </section>
-        </section>
+        <section id="kundinformation">
         <h2>Kundinformation</h2>
         <p>Vänlingen fyll önskad information nedan:</p>
         <p>
@@ -101,10 +107,10 @@
        
 
         <button type="submit">
-            <img src="public/img/greenbutton.png.jpeg" style="width: 10%; height: 10px; object-fit: cover;">
+            <img src="public/img/greenbutton.png.jpeg" style="width: 50px; height: 50px; object-fit: cover;">
              
+            Skicka beställning
             
-            Skicka information
           </button>
 
           <hr>

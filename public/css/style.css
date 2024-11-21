@@ -1,47 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
+
+/* Grundläggande stil för body */
 body {
     font-size: 12pt;
+    font-family: courier;
+    background-color: beige;
 }
 
-p {
-    color: red;
-}
-
+/* Standardstil för rubriker */
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
+    text-align: center;
+    color: #f5efef;
+   
 }
+
+/* Layout för sektioner */
 main, header, footer, nav ul {
     max-width: 40rem;
-    margin: 0 auto 0 auto;
-}
-main {
-    background-color: bisque;
+    margin: 0 auto;
 }
 
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
+
+main {
+    background-color: rgb(147, 171, 153);
+}
 
 header {
-    background-image: url("../img/polacks.jpg");
+    background-image: url("../img/headerbild.png.jpg");
     background-size: cover;
     overflow: hidden;
     width: 100%;
-    height: 200px;
+    height: auto;
     opacity: 0.5;
+    margin: 8px auto;
 }
 
-header h1 {
-    width:40rem;
-    margin: 0 auto;
-    text-align: center;
+/* Burgare-sektion */
+#burgare 
+{   
+    border: 1px solid #ffffff;
+    border: dashed;
+
+    margin: 10px auto; 
+    background-color: black; /* Bakgrundsfärg för burgarsektionen, hade gärna haft denna som grön egentligen */
+    color: white; /* Vit textfärg för kontrast */
+    padding: 20px 0; /* Lägg till utrymme ovanför och nedanför */
+    
 }
 
+#burgare .burger-items {
+    
+    display: grid; /* Byt till grid-layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamiskt antal kolumner */
+    gap: 2px; /* Mellanrum mellan burgarna */
+    justify-items: center; /* Centrerar burgarna i varje cell */
+}
+
+
+#burgare .burger-items div {
+    color: white;
+    padding: 1px; /* Minimalt avstånd mellan innehåll och ramen */
+    
+    text-align: center; /* Centrerar innehåll i varje burgare */
+    width: 200px; /* Fixerad bredd för varje burgare */
+    
+}
+
+#burgare img {
+    background-color: rgb(147, 171, 153);
+    width: 100%; /* Fyller hela bredden av sin container */
+    height: auto; /* Bevarar proportionerna */
+    object-fit: cover; /* Fyller containern utan att deformera bilden */
+    margin: 0; /* Ingen extra marginal */
+    border: none; /* Ingen bildram */
+}
+
+/* Andra sektioner */
+#kundinformation {
+    margin: 10px auto; 
+    background-color: rgb(147, 171, 153);
+    padding: 6px;
+    border: 1px solid #ffffff;
+    border: dashed;
+}
+
+/* Knappstil */
+button:hover {
+    background-color: rgb(0, 255, 225);
+}
+
+button {
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(127, 255, 138);
+}
+
+/* Stil för nav */
 nav ul {
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
     gap: 1em;
@@ -49,16 +107,20 @@ nav ul {
 }
 
 nav li {
-    display: block;
     background-color: grey;
     padding: 1em;
 }
 
+/* Exempel på klasser */
 .Very-good {
     color: green;
 }
 
 .Master {
     color: green;
+    font-weight: bold;
+}
+
+.ingredient {
     font-weight: bold;
 }
