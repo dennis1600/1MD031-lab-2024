@@ -1,21 +1,25 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Halloumiburgare", 
+    "kCal": 800, 
+    "url": "/img/halloumi.png.jpeg",
+    "lactose": true, 
+    "gluten": true,
+    "fisk": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Fiskburgare", 
+    "kCal": 600, 
+    "url": "/img/fisk.png.jpeg",
+    "lactose": true, 
+    "gluten": true,
+    "fisk": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Köttburgare", 
+    "kCal": 900, 
+    "url": "/img/grundrecept-hamburgare_32933.jpg.avif",
+    "lactose": true, 
+    "gluten": true,
+    "fisk": false,
+    "kött": true
 }]
